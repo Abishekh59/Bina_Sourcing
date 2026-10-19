@@ -1,6 +1,8 @@
 import type { ReactNode } from "react"
 import type { BinaTruckProps } from "./truck.types"
 
+const assetBaseUrl = import.meta.env.BASE_URL
+
 type SvgPartProps = {
   children: ReactNode
 }
@@ -73,7 +75,7 @@ function TruckCargoBox({ showBranding = true }: { showBranding?: boolean }) {
       {showBranding && (
         <g className="bina-truck-branding">
           <image
-            href="/bina-sourcing-logo.png"
+            href={`${assetBaseUrl}bina-sourcing-logo.png`}
             x="155"
             y="145"
             width="390"

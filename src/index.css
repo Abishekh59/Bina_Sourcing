@@ -21,7 +21,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 
 /* Header and hero */
 .hero{position:relative;height:100svh;min-height:820px;overflow:hidden;color:#fff;background:#061d2e}
-.hero-port-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,#061d2ef5 0%,#061d2ecb 35%,#061d2e59 67%,#061d2e35 100%),linear-gradient(0deg,#061d2ee8 0%,transparent 48%,#061d2e70 100%),url("/global-trade-at-night.png");background-size:cover;background-position:center right;filter:saturate(.82) contrast(1.05);transform:scale(1.03);opacity:.9}
+.hero-port-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,#061d2ef5 0%,#061d2ecb 35%,#061d2e59 67%,#061d2e35 100%),linear-gradient(0deg,#061d2ee8 0%,transparent 48%,#061d2e70 100%),var(--hero-image);background-size:cover;background-position:center right;filter:saturate(.82) contrast(1.05);transform:scale(1.03);opacity:.9}
 .grid-bg{position:absolute;inset:0;z-index:1;opacity:.13;background-image:linear-gradient(#ffffff26 1px,transparent 1px),linear-gradient(90deg,#ffffff26 1px,transparent 1px);background-size:100px 100px;mask-image:linear-gradient(to right,transparent,#000 60%)}
 .grid-bg:after{content:"";position:absolute;width:580px;aspect-ratio:1;right:4%;top:19%;border:1px solid #ffffff1a;border-radius:50%;box-shadow:0 0 80px #5d9ab41f,inset 0 0 80px #5d9ab414}
 header{position:absolute;z-index:50;top:0;width:100%;border-bottom:1px solid #ffffff21}.header-inner{width:var(--container);height:100px;margin:auto;display:flex;align-items:center;justify-content:space-between}

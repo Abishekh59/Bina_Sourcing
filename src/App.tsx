@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react"
 import type { CSSProperties, FormEvent, PointerEvent, ReactNode } from "react"
 import BinaTruck from "./components/truck/BinaTruck"
 
+const assetBaseUrl = import.meta.env.BASE_URL
+
 const services = [
   [
     "01",
@@ -151,12 +153,12 @@ function Logo({
         <>
           <img
             className="logo-image logo-image-nav"
-            src="/bina-sourcing-logo-light.png"
+            src={`${assetBaseUrl}bina-sourcing-logo-light.png`}
             alt="Bina Sourcing"
           />
           <img
             className="logo-image logo-image-scrolled"
-            src="/bina-sourcing-logo.png"
+            src={`${assetBaseUrl}bina-sourcing-logo.png`}
             alt=""
           />
         </>
@@ -164,7 +166,7 @@ function Logo({
         <img
           className={`logo-image ${light ? "logo-image-light" : ""}`}
           src={
-            light ? "/bina-sourcing-logo-light.png" : "/bina-sourcing-logo.png"
+            `${assetBaseUrl}${light ? "bina-sourcing-logo-light.png" : "bina-sourcing-logo.png"}`
           }
           alt="Bina Sourcing"
         />
@@ -288,7 +290,13 @@ function Hero({ quote }: { quote: () => void }) {
     ref.current.style.setProperty("--my", `${y}`)
   }
   return (
-    <section className="hero" id="top" ref={ref} onPointerMove={move}>
+    <section
+      className="hero"
+      id="top"
+      ref={ref}
+      onPointerMove={move}
+      style={{ "--hero-image": `url("${assetBaseUrl}global-trade-at-night.png")` } as CSSProperties}
+    >
       <div className="hero-port-bg" aria-hidden="true" />
       <div className="grid-bg" />
       <div className="hero-noise" aria-hidden="true" />
