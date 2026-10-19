@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from "react"
 import type { CSSProperties, FormEvent, PointerEvent, ReactNode } from "react"
 import BinaTruck from "./components/truck/BinaTruck"
-import { binaSourcingLogo, globalTradeImage } from "./assets"
+import {
+  binaSourcingLogo,
+  binaSourcingLogoLight,
+  globalTradeImage,
+} from "./assets"
 
 const services = [
   [
@@ -151,8 +155,8 @@ function Logo({
       {navigation ? (
         <>
           <img
-            className="logo-image logo-image-nav logo-image-light"
-            src={binaSourcingLogo}
+            className="logo-image logo-image-nav"
+            src={binaSourcingLogoLight}
             alt="Bina Sourcing"
           />
           <img
@@ -165,7 +169,7 @@ function Logo({
         <img
           className={`logo-image ${light ? "logo-image-light" : ""}`}
           src={
-            binaSourcingLogo
+            light ? binaSourcingLogoLight : binaSourcingLogo
           }
           alt="Bina Sourcing"
         />

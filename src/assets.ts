@@ -1,2 +1,3 @@
-export { default as binaSourcingLogo } from "./assets/bina-sourcing-logo.png"
-export { default as globalTradeImage } from "./assets/global-trade-at-night.png"
+export { default as binaSourcingLogo } from "./Images /binalogo.png"
+export { default as binaSourcingLogoLight } from "./Images /Fornavbarandfooter.png"
+export { default as globalTradeImage } from "./Images /GlobalTradeatNight.png"
