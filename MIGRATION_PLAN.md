@@ -4,7 +4,7 @@
 
 The supplied repository was a blank React 19 + Vite 8 + TypeScript + Tailwind CSS v4 web scaffold. It
 contained one empty component and no routes, design system, assets, animation libraries, forms, APIs,
-database, authentication, native application, tests, or deployment configuration beyond Figma Make.
+database, authentication, native application, tests, or deployment configuration.
 
 ## Implemented foundation
 
