@@ -1,6 +1,5 @@
 import type { ReactNode } from "react"
 import type { BinaTruckProps } from "./truck.types"
-import { binaSourcingLogo } from "../../assets"
 
 type SvgPartProps = {
   children: ReactNode
@@ -72,15 +71,14 @@ function TruckCargoBox({ showBranding = true }: { showBranding?: boolean }) {
       />
       <path d="M701 385 L1038 175" stroke="#fff" strokeWidth="10" strokeOpacity=".95" />
       {showBranding && (
-        <g className="bina-truck-branding">
-          <image
-            href={binaSourcingLogo}
-            x="155"
-            y="145"
-            width="390"
-            height="166"
-            preserveAspectRatio="xMidYMid meet"
-          />
+        <g className="bina-truck-branding" transform="translate(145 145)" fill="#092b45">
+          <text x="0" y="91" fontFamily="Arial, sans-serif" fontSize="96" fontWeight="700" letterSpacing="-5">
+            BINA
+          </text>
+          <path d="M196 74 C252 50 305 28 376 5 C329 41 278 73 223 91Z" fill="#f26735" />
+          <text x="5" y="139" fontFamily="Arial, sans-serif" fontSize="30" fontWeight="500" letterSpacing="12">
+            SOURCING
+          </text>
         </g>
       )}
       <g fill="#ffbd4c">
