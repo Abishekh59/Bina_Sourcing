@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import type { CSSProperties, FormEvent, PointerEvent, ReactNode } from "react"
 import BinaTruck from "./components/truck/BinaTruck"
-
-const assetBaseUrl = import.meta.env.BASE_URL
+import { binaSourcingLogo, globalTradeImage } from "./assets"
 
 const services = [
   [
@@ -152,13 +151,13 @@ function Logo({
       {navigation ? (
         <>
           <img
-            className="logo-image logo-image-nav"
-            src={`${assetBaseUrl}bina-sourcing-logo-light.png`}
+            className="logo-image logo-image-nav logo-image-light"
+            src={binaSourcingLogo}
             alt="Bina Sourcing"
           />
           <img
             className="logo-image logo-image-scrolled"
-            src={`${assetBaseUrl}bina-sourcing-logo.png`}
+            src={binaSourcingLogo}
             alt=""
           />
         </>
@@ -166,7 +165,7 @@ function Logo({
         <img
           className={`logo-image ${light ? "logo-image-light" : ""}`}
           src={
-            `${assetBaseUrl}${light ? "bina-sourcing-logo-light.png" : "bina-sourcing-logo.png"}`
+            binaSourcingLogo
           }
           alt="Bina Sourcing"
         />
@@ -295,7 +294,7 @@ function Hero({ quote }: { quote: () => void }) {
       id="top"
       ref={ref}
       onPointerMove={move}
-      style={{ "--hero-image": `url("${assetBaseUrl}global-trade-at-night.png")` } as CSSProperties}
+      style={{ "--hero-image": `url("${globalTradeImage}")` } as CSSProperties}
     >
       <div className="hero-port-bg" aria-hidden="true" />
       <div className="grid-bg" />
