@@ -1,0 +1,12 @@
+{
+  "title": "BINA SOURCING — Source China. Grow Everywhere.",
+  "description": "BINA SOURCING coordinates product sourcing, supplier discovery, quality control, consolidation, and delivery from China to businesses worldwide.",
+  "language": "en",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}
